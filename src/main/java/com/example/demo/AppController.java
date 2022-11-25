@@ -8,6 +8,6 @@ public class AppController {
 
 	@GetMapping("home")
 	public String getHome() {
-		return "welcome home";
+		return "welcome home again";
 	}
 }
