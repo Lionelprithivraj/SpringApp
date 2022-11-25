@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  build:
+    commands:
+    - echo entered build phase
+    - mvn clean package
+  post_build:
+    commands:
+    - echo build complete
+artifacts:
+  files:
+  - target/springapp.jar
+  discard-paths: yes
