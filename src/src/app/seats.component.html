@@ -1,0 +1,163 @@
+<!-- <div class="col col-md-9" >
+    <div class="container-fluid col-md-6">
+        <form>
+            <h1 style="text-align: center;">Screen Seats</h1>
+            
+            <div >
+                Seats:
+                <select class="form-select " aria-label="Default select example">
+                    <option selected>Select number of Seats</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            
+            
+            <div class="d-flex justify-content-center align-items-center">
+                <button>Insert Movie</button>
+            </div>
+            
+        </form>
+
+</div> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="" />
+    <title>Movie Seat Booking</title>
+  </head>
+  <body>
+
+    <div style=" margin-top: 2cm;">
+        Seats:
+        <select class="form-select "  aria-label="Default select example" [(ngModel)]="value" (change)="change()" >
+          
+            <option value>Select number of Seats</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+                <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbXpc7B6Yqw18y2kNU97s8X8xdMIH5n_aWfg&usqp=CAU" height="30px" width="70px" ></p>
+
+        <div class="card-group" >
+          <div class="card" >
+            <div class="card-body">
+              <h5 class="card-title" ></h5>
+              <p class="card-text">{{msg}}</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"></small>
+            </div>
+          </div>
+      </div>
+     
+    </div>
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <small>Available</small>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <small>Selected</small>
+      </li>
+      <li>
+        <div class="seat sold"></div>
+        <small>Sold</small>
+      </li>
+    </ul>
+    
+    
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat sold"></div>
+        <div class="seat"></div>
+      </div>
+    </div>  
+    <div class="d-flex justify-content-center align-items-center bg-primary" >
+      <input type="submit" value="Bookticket">
+  </div>
+  
+    
+    
+    
+  </body>
+</html>
